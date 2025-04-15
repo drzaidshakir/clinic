@@ -754,7 +754,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // States
   let redirected = false;
   let cancelled = false;
-  let timer = 5;
+  let timer = 3;
   let progress = 0;
   
   // Browser detection for custom handling
@@ -834,12 +834,12 @@ const countdownInterval = setInterval(function() {
         
         setTimeout(function() {
           countdown.classList.remove('animate__animated', 'animate__fadeInUp');
-        }, 500);
+        }, 300);
       }
-    }, 500);
+    }, 300);
     
     // Update progress
-    progress = ((5 - timer) / 5) * 100;
+    progress = ((3 - timer) / 3) * 100;
     progressBar.style.width = progress + '%';
     
     // حساب موضع المؤشر (بدون تعديل القيمة بالنسبة للاتجاه)
